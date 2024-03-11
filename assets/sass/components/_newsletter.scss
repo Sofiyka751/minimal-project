@@ -1,0 +1,110 @@
+@import "../utils/colors";
+
+.newsletter {
+  margin: 0 0 85px 0;
+}
+.newsletter__content {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+.newsletter__content-all-text-title {
+  color: $main-blue;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.newsletter__content-all-text-text {
+  color: $main-blue;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 536px;
+  margin: 0 0 20px 0;
+}
+.newsletter__conent-all-text-name {
+  display: flex;
+  width: 535px;
+  height: 50px;
+  padding: 11px 20px;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 20px 0;
+}
+.newsletter__conent-all-text-email {
+  display: flex;
+  width: 535px;
+  height: 50px;
+  padding: 11px 20px;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 20px 0;
+}
+.newsletter__content-all-text-label-text {
+  color: $light-gray;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+input#checkbox {
+  width: 25px;
+  height: 25px;
+  border: 1px solid $light-gray2;
+  accent-color: $main-blue;
+}
+.newsletter__content-all-text-label-button {
+  display: flex;
+  width: 225px;
+  height: 50px;
+  padding: 20px 65px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: $main-blue;
+  transition: background-color 0.3s ease;
+  transition: transform 0.5s ease;
+
+  color: $white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 35px 0 0 0;
+  &:hover {
+    background-color: $main-blue-dark;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .newsletter__conent-all-text-email,
+  .newsletter__conent-all-text-name {
+    width: 300px;
+  }
+  .newsletter__content-all-text-text {
+    width: 343px;
+    margin: 0 0 30px 0;
+  }
+  .newsletter__content .image {
+    width: 343px;
+    height: 300px;
+  }
+}

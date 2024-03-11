@@ -1,0 +1,129 @@
+@import "../utils/colors";
+
+.about-us {
+  margin: 0 0 100px 0;
+}
+.about-us__content-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.about-us__content-info-all_text {
+  display: flex;
+  flex-direction: column;
+}
+.about-us__content-info-uptext {
+  color: $main-blue;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 36px 0 30px 0;
+}
+.about-us__content-info-title {
+  color: $main-blue;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  padding: 0 0 30px 0;
+}
+.about-us__content-info-text {
+  color: $main-blue;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 0 0 30px 0;
+}
+.about-us__content-info-number {
+  display: flex;
+  gap: 55px;
+  padding: 0 0 30px 0;
+}
+.about-us__content-info-number1,
+.about-us__content-info-number2,
+.about-us__content-info-number3 {
+  transition: transform 1s ease;
+  &:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 7px 4px $main-blue);
+  }
+}
+.about-us__content-info-number-title {
+  color: $main-blue;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+.about-us__content-info-number-text {
+  color: $main-blue;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.image4-1 {
+  display: none;
+}
+.image4-2{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .about-us__content-info {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .about-us__content-info-uptext {
+    transform: translateX(-245px);
+  }
+  .about-us__content-info-all_text {
+    align-items: center;
+  }
+  .about-us__content-info .image {
+    display: none;
+  }
+  .image4-1 {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-us__content-info-uptext {
+    transform: translateX(-110px);
+  }
+  .about-us__content-info-title {
+    color: $main-blue;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+  }
+  .about-us__content-info-number {
+    flex-direction: column;
+  }
+  .image4-1{
+    display: none;
+  }
+  .image4-2{
+    display: block;
+    margin: 65px 0 0 0;
+  }
+}

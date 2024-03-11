@@ -1,0 +1,96 @@
+@import "../utils/colors";
+
+/* nav-menu */
+nav {
+  flex-grow: 3;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="checkbox"]#toggle,
+label#toggl {
+  display: none;
+}
+
+/* mobile menu */
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    background: $gray-white;
+    width: 100%;
+    z-index: 2;
+   }
+  .header__nav {
+    padding: 16px 0;
+  }
+  nav {
+    order: 1;
+  }
+  .nav {
+    display: flex;
+    gap: 535px;
+    align-items: center;
+  }
+  label#toggl {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+  }
+  label#toggl:hover {
+    cursor: pointer;
+  }
+  label#toggl span {
+    top: 15px;
+  }
+  label#toggl span,
+  label#toggl span::before,
+  label#toggl span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: $dark-gray;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  label#toggl span::before {
+    top: -8px;
+  }
+  label#toggl span::after {
+    top: 8px;
+  }
+  .nav__list {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="checkbox"]:checked ~ label#toggl span {
+    transform: rotate(-45deg);
+  }
+  input[type="checkbox"]:checked ~ label#toggl span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type="checkbox"]:checked ~ label#toggl span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav__list {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 100px 0 450px 0;
+    box-shadow: 0 12px 8px $gray-white-shadow;
+    background: $gray-white;
+  }
+}

@@ -1,0 +1,38 @@
+@import "./components/header";
+@import "./components/burger-menu";
+@import "./components/modern";
+@import "./components/about-us";
+@import "./components/price";
+@import "./components/product";
+@import "./components/bestsellers";
+@import "./components/clients";
+@import "./components/newsletter";
+@import "./components/footer";
+@import "./components/footer-table";
+@import "./components/footer-mobile";
+
+a {
+  text-decoration: none;
+}
+
+button{
+  border: none;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  // padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container{
+    width: 345px;
+  }
+}
