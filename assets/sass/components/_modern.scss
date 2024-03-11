@@ -80,7 +80,7 @@
     display: block;
   }
   .modern__content-title{
-    margin: 25px 0 0 0;
+    margin: 30px 0 0 0;
   }
   .modern__content-text{
     margin: 40px 0 20px 0;
@@ -89,7 +89,7 @@
 
 @media (max-width: 375px) {
   .modern {
-    background-image: url(/assets/images/image2-2.png);
+    background-image: url("/assets/images/image2-2.png");
     height: 717px;
   }
   .modern__content-title {
