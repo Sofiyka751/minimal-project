@@ -233,10 +233,6 @@ label#toggl {
   }
 }
 @media (max-width: 375px) {
-  .modern {
-    background-image: url("/assets/images/image2-2.png");
-    height: 717px;
-  }
   .modern__content-title {
     width: 285px;
     color: #0a224a;
@@ -1227,5 +1223,9 @@ button {
 @media (max-width: 375px) {
   .container {
     width: 345px;
+  }
+  .modern {
+    background-image: url("../images/image2-2.png");
+    height: 717px;
   }
 }/*# sourceMappingURL=style.css.map */
