@@ -1228,4 +1228,20 @@ button {
     background-image: url("../images/image2-2.png");
     height: 717px;
   }
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }/*# sourceMappingURL=style.css.map */
